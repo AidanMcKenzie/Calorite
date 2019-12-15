@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="uk.ac.napier.mobilecoursework.InputPage">
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:text="Add"
+        android:layout_alignBottom="@+id/edtInputCals"
+        android:layout_toEndOf="@+id/edtInputCals" />
+
+    <EditText
+        android:id="@+id/edtInputCals"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:ems="2"
+        android:inputType="number"
+        android:layout_below="@+id/txtInputYour"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txtInputYour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:text="Input your Calories:"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="75dp" />
+
+    <TextView
+        android:id="@+id/txtCalsAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Calories added:"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="222dp"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="81dp"
+        android:layout_below="@+id/btnAdd"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return"
+        android:layout_marginBottom="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txtCalsAdded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="80sp"
+        android:layout_below="@+id/txtCalsAdd"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="uk.ac.napier.mobilecoursework.InitialInfoPage">
+
+    <TextView
+        android:id="@+id/txtYourRecomm"
+        android:layout_width="300dp"
+        android:layout_height="61dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp"
+        android:text="Your recommended daily calorie intake is:"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/calorieCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtYourRecomm"
+        android:layout_marginTop="23dp"
+        android:text="TEST"
+        android:textAlignment="center"
+        android:textSize="80sp" />
+
+    <Button
+        android:id="@+id/btnContInfo"
+        android:layout_width="93dp"
+        android:layout_height="48dp"
+        android:elevation="0dp"
+        android:text="Continue"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/totCal"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:id="@+id/totCal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="calories"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_below="@+id/calorieCount"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
